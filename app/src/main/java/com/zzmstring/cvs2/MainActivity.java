@@ -1,20 +1,76 @@
 package com.zzmstring.cvs2;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements View.OnClickListener {
+
+
+    @InjectView(R.id.bt1)
+    Button bt1;
+    @InjectView(R.id.bt2)
+    Button bt2;
+    @InjectView(R.id.bt3)
+    Button bt3;
+    @InjectView(R.id.bt4)
+    Button bt4;
+    @InjectView(R.id.bt5)
+    Button bt5;
+    @InjectView(R.id.bt6)
+    Button bt6;
+    @InjectView(R.id.bt7)
+    Button bt7;
+    @InjectView(R.id.bt8)
+    Button bt8;
+    @InjectView(R.id.bt9)
+    Button bt9;
+    @InjectView(R.id.bt10)
+    Button bt10;
+    @InjectView(R.id.bt11)
+    Button bt11;
+    @InjectView(R.id.bt12)
+    Button bt12;
+    @InjectView(R.id.bt13)
+    Button bt13;
+    @InjectView(R.id.bt14)
+    Button bt14;
+    @InjectView(R.id.bt15)
+    Button bt15;
+    @InjectView(R.id.bt16)
+    Button bt16;
+    @InjectView(R.id.bt17)
+    Button bt17;
+    @InjectView(R.id.bt18)
+    Button bt18;
+    @InjectView(R.id.bt19)
+    Button bt19;
+    @InjectView(R.id.bt20)
+    Button bt20;
+    @InjectView(R.id.bt21)
+    Button bt21;
+    @InjectView(R.id.bt22)
+    Button bt22;
+    @InjectView(R.id.bt23)
+    Button bt23;
+    @InjectView(R.id.bt24)
+    Button bt24;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.inject(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        if(toolbar != null) {
+        if (toolbar != null) {
             setSupportActionBar(toolbar);
         }
         toolbar.setLogo(R.mipmap.ic_launcher);
@@ -31,6 +87,15 @@ public class MainActivity extends ActionBarActivity {
         });
         // Inflate a menu to be displayed in the toolbar
         toolbar.inflateMenu(R.menu.menu_main);
+        init();
+        initListener();
+    }
+    private void init(){
+        bt1.setText("fb");
+
+    }
+    private void initListener(){
+        bt1.setOnClickListener(this);
     }
 
 
@@ -54,5 +119,14 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.bt1:
+
+                break;
+        }
     }
 }
