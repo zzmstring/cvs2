@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/flatbt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="flatbutton"
+                flatui:fl_theme="@array/custom_theme" />
+
+            <com.cengalabs.flatui.views.FlatSeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.cengalabs.flatui.views.SomeFlatView
+
+                flatui:fl_borderWidth="2dp"
+                flatui:fl_cornerRadius="5dp"
+                flatui:fl_fontExtension="ttf"
+                flatui:fl_fontFamily="roboto"
+                flatui:fl_fontWeight="light"
+                flatui:fl_size="20dp"
+                flatui:fl_textAppearance="dark"
+                flatui:fl_theme="@array/sand" />
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="textview"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                flatui:fl_backgroundColor="darker"
+                flatui:fl_customBackgroundColor="#00aff0"
+                flatui:fl_fontExtension="ttf"
+                flatui:fl_fontFamily="roboto"
+                flatui:fl_fontWeight="light"
+                flatui:fl_textColor="main" />
+            <com.cengalabs.flatui.views.FlatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                flatui:fl_dotMargin="5dip"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
