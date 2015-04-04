@@ -26,16 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <com.cengalabs.flatui.views.SomeFlatView
 
-                flatui:fl_borderWidth="2dp"
-                flatui:fl_cornerRadius="5dp"
-                flatui:fl_fontExtension="ttf"
-                flatui:fl_fontFamily="roboto"
-                flatui:fl_fontWeight="light"
-                flatui:fl_size="20dp"
-                flatui:fl_textAppearance="dark"
-                flatui:fl_theme="@array/sand" />
             <com.cengalabs.flatui.views.FlatTextView
                 android:id="@+id/textview"
                 android:layout_width="wrap_content"
@@ -43,12 +34,12 @@
                 android:text="textview"
                 android:textColor="#000000"
                 android:textSize="18sp"
-                flatui:fl_backgroundColor="darker"
+
                 flatui:fl_customBackgroundColor="#00aff0"
                 flatui:fl_fontExtension="ttf"
                 flatui:fl_fontFamily="roboto"
                 flatui:fl_fontWeight="light"
-                flatui:fl_textColor="main" />
+                 />
             <com.cengalabs.flatui.views.FlatCheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
