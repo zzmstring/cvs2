@@ -98,11 +98,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         bt1.setText("fb");
         bt2.setText("flatui");
         bt3.setText("overmenu");
+        bt4.setText("recycle");
     }
     private void initListener(){
         bt1.setOnClickListener(this);
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
+        bt4.setOnClickListener(this);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -130,6 +132,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 skipAty(FlatUiAty.class);
                 break;
             case R.id.bt3:
+
+                break;
+            case R.id.bt4:
 
                 break;
         }
