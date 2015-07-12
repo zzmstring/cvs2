@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.zzmstring.cvs2.UIAty.FlatUiAty;
+import com.zzmstring.cvs2.UIAty.RecyclerAty;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -99,6 +100,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         bt2.setText("flatui");
         bt3.setText("overmenu");
         bt4.setText("recycle");
+
     }
     private void initListener(){
         bt1.setOnClickListener(this);
@@ -135,7 +137,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
                 break;
             case R.id.bt4:
-
+                skipAty(RecyclerAty.class);
                 break;
         }
     }
